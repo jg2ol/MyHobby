@@ -1,0 +1,15 @@
+body {background-color: #252525;}
+header {padding: 15px;
+    border-bottom: 2px solid yellow;
+    background-color: purple;}
+*{margin: 60;
+    padding: 0;
+    border: 60;}
+.links {text-align: center;}
+header div a {color: yellow;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 16px;
+    text-decoration: none;
+    font-family: fonte do header}
+header div a:hover {color: aqua; transition: color 400ms;}
