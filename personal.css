@@ -6,10 +6,9 @@ header {padding: 15px;
     padding: 0;
     border: 60;}
 .links {text-align: center;}
-header div a {color: yellow;
+.links a {color: yellow;
     font-size: 15px;
     line-height: 30px;
     margin: 16px;
-    text-decoration: none;
-    font-family: fonte do header}
-header div a:hover {color: aqua; transition: color 400ms;}
+    text-decoration: none;}
+.links a:hover {color: aqua; transition: color 400ms;}
