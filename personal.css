@@ -2,7 +2,7 @@ body {background-color: #252525;}
 header {padding: 15px;
     border-bottom: 2px solid yellow;
     background-color: purple;}
-*{margin: 60;
+*{margin: 0;
     padding: 0;
     border: 60;}
 .links {text-align: center;}
@@ -13,3 +13,7 @@ header {padding: 15px;
     text-decoration: none;}
 .links a:hover {color: aqua; transition: color 400ms;}
 #lf a {text-decoration: underline solid red;}
+
+#obm1 h1 {height: 30px; color: blue; font-size: 15px;}
+#obm1 h2 {height: 30px; color: blue; font-size: 15px;}
+#obm1 img {margin: 25px;}
