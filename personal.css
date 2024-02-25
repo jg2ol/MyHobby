@@ -1,10 +1,9 @@
 body {background-color: #252525;}
-header {padding: 15px;
-    border-bottom: 2px solid yellow;
-    background-color: purple;}
-*{margin: 0;
-    padding: 0;
-    border: 60;}
+
+*{margin: 0; padding: 0; border: 60;}
+
+header {padding: 15px; border-bottom: 2px solid yellow; background-color: purple;}
+
 .links {text-align: center;}
 .links a {color: yellow;
     font-size: 15px;
@@ -14,6 +13,10 @@ header {padding: 15px;
 .links a:hover {color: aqua; transition: color 400ms;}
 #lf a {text-decoration: underline solid red;}
 
-#obm1 h1 {height: 30px; color: blue; font-size: 15px;}
-#obm1 h2 {height: 30px; color: blue; font-size: 15px;}
-#obm1 img {margin: 25px;}
+.chama img {margin: 30px; margin-left: 40px; border-radius: 50%; border: 3px solid cyan;}
+.chama h1 {height: 30px; width: 290px; color: rgb(156, 43, 156); font-size: 15px; text-align: center;}
+.chama h2 {height: 30px; width: 290px;color: rgb(156, 43, 156); font-size: 15px; text-align: center;}
+.chama h2 a:hover {color: green; transition: color 400ms; font-size: 18px;}
+.chama h2 a {color: rgb(156, 43, 156); text-decoration: none;}
+.chama {margin-left: 50px; list-style: none; float: left;}
+.chama li {position: relative; float: left;}
