@@ -5,11 +5,7 @@ body {background-color: #252525; text-align: center;}
 header {padding: 15px; border-bottom: 2px solid yellow; background-color: purple;}
 
 .links {text-align: center;}
-.links a {color: yellow;
-    font-size: 15px;
-    line-height: 30px;
-    margin: 16px;
-    text-decoration: none;}
+.links a {color: yellow; font-size: 15px; line-height: 30px; margin: 16px; text-decoration: none;}
 .links a:hover {color: aqua; transition: color 400ms;}
 #lf a {text-decoration: underline solid red;}
 
