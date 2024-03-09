@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap');
 body {background-color: #252525;}
 
 *{margin: 0; padding: 0; border: 60;}
 
 header {padding: 15px; border-bottom: 2px solid yellow; background-color: purple;}
 
-.links {text-align: center; font-family: "Namdhinggo", serif;}
+.links {text-align: center;}
 .links a {color: yellow; font-size: 15px; line-height: 30px; margin: 16px; text-decoration: none;}
 .links a:hover {color: aqua; transition: color 400ms;}
 
