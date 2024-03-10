@@ -10,8 +10,7 @@ header {padding: 15px; border-bottom: 2px solid yellow; background-color: purple
 #lf a {text-decoration: underline solid red;}
 
 .chama img {margin: 30px; margin-left: 40px; border-radius: 50%; border: 3px solid cyan;}
-.chama p {height: 30px; width: 290px; color: rgb(156, 43, 156); font-size: 15px; text-align: center;}
-.chama h1 {height: 30px; width: 290px; color: rgb(156, 43, 156); font-size: 15px; text-align: center;}
+.chama p, h2 {height: 30px; width: 290px; color: rgb(156, 43, 156); font-size: 15px; text-align: center;}
 .chama p a:hover {color: green; transition: color 400ms; font-size: 18px;}
 .chama p a {color: rgb(156, 43, 156); text-decoration: none;}
 .chama {margin-left: 50px; list-style: none; float: left;}
