@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+.sites a {margin: 5px;}
+.borda {border: 1px solid red;}
+
+.background {
+    height: 50px;
+    background-color: red;
+    background-image: url("../img/xadrez.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.border {
+    height: 50px;
+    background-color: blue;
+    border-right: 15px dashed black;
+    border-top: 15px dashed gray;
+    border-left: 15px dashed purple;
+    border-bottom: 15px dashed plum;
+    border-radius: 20%
+}
+.margin {
+    height: 50px;
+    background: purple;
+    margin-left: 50px;
+}
+.padding {
+    height: 50px;
+    background: green;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.w-h {
+    background: yellow;
+    height: 100px;
+    max-width: 900px;
+}
+.w-h:hover {
+    background: blue;
+}
+
+.text1 {
+    background: cyan;
+    height: 160px;
+    text-align: center;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-decoration: overline solid blue;
+    text-transform: capitalize;
+    text-indent: 150px;
+    letter-spacing: 1px;
+    line-height: 2;
+    word-spacing: 2px;
+}
+.text2 {
+    background: greenyellow;
+    height: 60px;
+    text-align: center;
+    direction: ltr;
+    text-decoration: line-through solid purple;
+    text-transform: lowercase;
+    text-indent: 150px;
+    letter-spacing: -4px;
+}
+.font {
+    background: violet;
+    height: 80px;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.botoes {margin: 10px 0px 10px 20px;}
+
+a#botao1 {
+    color: white;
+    background: darkgreen;
+    height: 80px;
+    text-decoration: none;
+    padding: 10px;
+    border: 3px solid darkblue;
+    border-radius: 5px;
+    cursor: vertical-text;
+}
+a#botao1:hover {
+    color: darkmagenta;
+    background: green;
+    padding: 13px;
+}
+
+a#botao2 {
+    text-decoration: none;
+    border: 5px double blue;
+    padding: 10px;
+    cursor: zoom-in;
+}
+a#botao2:hover {
+    background: blue;
+    padding: 8px;
+    color: white;
+}
+
+a#botao3 {
+    color: black;
+    text-decoration: none;
+    cursor: none;
+}
+a#botao3:hover {
+    color: purple;
+    transition: 200ms;
+    border-bottom: 5px solid red;
+}
+
+a#botao4 {
+    font-size: 14px;
+    text-decoration: none;
+    color: blue;
+    cursor: wait;
+}
+a#botao4:hover {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a#botao5 {
+    cursor: help;
+}
+a#botao5:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.display {
+    display: inline;
+}
+#p1:hover {display: none;}
+#hidden {visibility: hidden;}
+
