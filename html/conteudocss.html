@@ -54,6 +54,7 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, enim. Ex, cum. Nostrum id, quasi quia facere voluptate culpa corrupti molestias amet doloremque sapiente voluptatibus iure quos. Doloribus, eveniet.
     </div>
 
+    <!--O max-width(ou height) faz com que o elemento se adapte em comprimento(ou altura) até chegar ao limite de tela diponobilizado pelo usuário-->
     <!--Tamanho, fonte, estilos, espessura da letra-->
     <div class="font">
         chama7 <br>
@@ -70,14 +71,50 @@
     </div>
     <!--Formas de fazer aparecer os elementos, possibilidade de mudar a posição dos elementos-->
     <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga in illum at consequuntur perferendis magni sit provident quod ipsum ex, cumque aut culpa, consectetur, accusamus et deserunt. Commodi, veritatis beatae!</p>
+
     <!--Existe, ocupa espaço mas não aparece-->
     <h6 id="hidden">chama999</h6>
+
     <h3 class="display borda">Eu sou do tipo block</h3>
     <p class="display borda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odio reiciendis officia consequatur magni pariatur sint! Quaerat quibusdam commodi eligendi consequuntur, facere at animi minima. Iste itaque magni non voluptatem.</p>
     <!--O display inline enxerga os elementos como plalavras-->
     <!--O dilplay inline-block é uma junção dos dois displays e permite a edição dos elemetos-->
 
+    <br><br><br>
+    <!--Relative nos permite mudar a posição de um elemento sem que ele ocupe espaço juntamente com a hierarquia de sobreposição com z-index-->
 
+    <div class="relative">
+        <div class="r1">Primeira div</div>
+        <div class="r2">Segunda div</div>
+        <div class="r3">Terceira div</div>
+    </div>
+
+    <br>
+    <!--Fixa o elemento em relação à tela do usuário-->
+    <div class="fixed">
+        <img class="instagram-icon" src="/img/instagram.png" alt="instagram-icon">
+        <a id="instagram" href = "https://www.instagram.com/joaogdss?igsh=MWk1bGZ4a3VvaXhpYw==" target="_blank">Chama</a>
+    </div>
+
+    <br>
+    <!--Mudança de posição a partir de um referencial "pai" do elemento, deixando de ocupar aquele espaço e ocupando outro-->
+    <div class="absolute">
+        <div class="a1">Primeira div</div>
+        <div class="a2">Segunda div</div>
+        <div class="a3">Terceira div</div>
+    </div>
+
+    <br><br>
+    <!--O elemento fica pegajoso ao "pai" dele a partir de linhas determinadas-->
+    <!--Distância mínima do elemento às bordas do superior("pai") dele-->
+    <div class="sticky">
+        <div class="s1">Primeira div</div>
+        <div class="s2">Segunda div</div>
+        <div class="s3">Terceira div</div>
+    </div>
+
+
+    
 </body>
    <!--A criatividade é o limite-->
 </html>
