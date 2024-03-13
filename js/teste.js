@@ -26,4 +26,4 @@ function soma (a,b){return a+b};
 console.log("3+5 =", soma (3,5));
 
 for (let i=0; i<13; i++){console.log(i)};
-
+//Comentário
