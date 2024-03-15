@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-.sites a {margin: 5px;}
+.sites {background: #252525;}
+li a {color: white; text-decoration: none;}
+li:hover {background: blueviolet;}
+li {display: inline-block; padding: 15px;}
+.login {float: right;}
+.login:hover {background: red;}
+
 .borda {border: 1px solid red;}
 
 .background {
@@ -155,6 +161,7 @@ a#botao5:hover {color: orange; text-decoration: none;}
     right: 15px; top: 20px;
 }
 
+.fixed:hover {opacity: 0.9;}
 .fixed a:hover {transition: 300ms; color: red;}
 .fixed a {color: white; text-decoration: none;}
 .fixed {
@@ -206,3 +213,12 @@ a#botao5:hover {color: orange; text-decoration: none;}
     width: 30%; height: 50px;
     display: inline-block;
 }
+.overflow {
+    width: 100%;
+    background: #252525;
+    height: 100px;
+    overflow-y: scroll;
+    color: white;
+}
+.float {overflow: auto; border: solid 1px black;}
+.float img {float: right;}

@@ -2,19 +2,21 @@
 <html lang="pt-br">
     <link rel="stylesheet" href="/css/conteudocss.css">
 <head>
-    <title>CSS</title>
+    <title>Conteúdo CSS</title>
     <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <meta name="author" content="joso_leirbag">
 </head>
 
 <body>
-    <div class="sites">
-        <a href="index.html">Site principal</a>
-        <a href="form.html">Formulário</a>
-        <a href="audio.html">Áudio</a>
-        <a href="video.html">Vídeo</a>
-        <a href="conteudohtml.html">Conteúdo html</a>
-    </div>
+    <ul class="sites">
+        <li><a href="index.html">Site principal</a></li>
+        <li><a href="form.html">Formulário</a></li>
+        <li><a href="form.html">Formulário</a></li>
+        <li><a href="audio.html">Áudio</a></li>
+        <li><a href="video.html">Vídeo</a></li>
+        <li><a href="conteudohtml.html">Conteúdo html</a></li>
+        <li class="login"><a href="https://youtube.com">Login</a></li>
+    </ul>
 
     <h1>Site - conteúdo css</h1>
 
@@ -113,8 +115,27 @@
         <div class="s3">Terceira div</div>
     </div>
 
+    <!--Amostra do conteúdo de um elemento, adaptar a visibilidade do conteúdo de acordo com o tamanho do elemento, usado quando fixamos uma altura ao elemento-->
+    <!--Padrão = visible: Mostra o conteúdo mesmo fora do elemento; hidden: Some com o conteúdo fora do elemento; scroll: Adiciona uma barra de rolagem p/ vermos o conteúdo; auto: Igual ao scroll porém remove o scroll quando desnecessário-->
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda eos quia. Nulla non esse voluptates omnis ut vero saepe enim nostrum. Amet sunt, ullam quasi molestias accusamus adipisci blanditiis.</p>
+        <p>Molestias fuga aliquid aut praesentium, officiis vitae in a! Cumque at, accusantium odio veritatis tempora molestias tempore, consectetur veniam rerum delectus asperiores nulla quibusdam est sequi debitis ratione a corrupti.</p>
+    </div>
+    <br><br>
 
-    
+    <!--Fazer os elementos flutuarem para posições específicas-->
+    <div class="float">
+        <img src="/img/xadrez.jpg" width="200" height="250">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima et voluptate id obcaecati. Atque, necessitatibus, aspernatur repellat eum perspiciatis debitis doloribus aliquam minima ex qui dolore, earum fugit itaque facere!</p>
+        <p>Sed asperiores unde eveniet sequi at minus neque cum consequuntur dicta, sit nam temporibus, repellat et ex dolorum minima consequatur impedit ratione, dolorem exercitationem hic nesciunt obcaecati ullam! Quod, voluptates.</p>
+        <!--A partir daqui o float não funciona mais-->
+        <p style="clear: both">Doloremque ipsum reiciendis, atque voluptatum rem cum reprehenderit. Vel at reiciendis eaque sint quos non quibusdam blanditiis veniam minus debitis assumenda quaerat itaque dolore illo, qui ut soluta rem harum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae itaque, exercitationem optio ex ducimus repellendus amet earum! Impedit quisquam debitis autem harum itaque ut inventore reiciendis non blanditiis nesciunt!</p>
+    </div>
+    <br><br>
+
+
+
 </body>
    <!--A criatividade é o limite-->
 </html>
