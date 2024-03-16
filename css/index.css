@@ -1,6 +1,6 @@
-body {background-color: #252525;}
+body {background: #252525;}
 
-header {padding: 15px; border-bottom: 2px solid yellow; background-color: purple;}
+header {padding: 15px; border-bottom: 2px solid yellow; background: purple;}
 .linksheader {text-align: center;}
 .linksheader a {color: yellow; font-size: 15px; line-height: 30px; margin: 16px; text-decoration: none;}
 .linksheader a:hover {color: aqua; transition: color 400ms;}
