@@ -1,0 +1,21 @@
+body {background: #252525; color: white;}
+
+#claro {
+    color: yellow;
+    background-color: blue;
+    height: 57px;
+    border-radius: 50%;
+    border: solid 2px red;
+}
+#escuro {
+    color: red;
+    background-color: purple;
+    height: 57px;
+    border-radius: 50%;
+    border: solid 2px blue;
+}
+.tema {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
