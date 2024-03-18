@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Peralta&display=swap');
+
+*{box-sizing: border-box;}
+
+body {margin: 0; font-family: "Barlow Semi Condensed", sans-serif;}
+
+.navbar {
+    background: white;
+    height: 100px; width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.logo {
+    margin-left: 10%;
+    flex: 20%;
+    text-align: left;
+}
+.logo h1 {
+    font-family: "Peralta", serif;
+    color: #180f4a;
+    font-size: 34px;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+.menu a {
+    color: #180f4a;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+.menu a:hover {
+    color: #ff2978;
+    border-top: solid 4px #180f4a;
+}
+
+#botao {
+    background: #180f4a;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+#botao:hover {
+    border: none;
+    background: #ff2978;
+}
+
+.header {
+    background: white;
+    height: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+}
+.headline h2 {
+    padding: 0; margin: 0;
+    font-weight: 900;
+    font-size: 20px;
+    color: #180f4a;
+}
+.headline p {
+    color: gray;
+    text-align: left;
+}
+.contact_btn {
+    background: #ff2978;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.contact_btn:hover {
+    background: #180f4a;
+
+}
+.img_headline {
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+.img_headline img {
+    max-width: 90%;
+}
+
+section {
+    display: inline-block;
+    margin: 80px 5% 0px 5%;
+    text-align: center;
+    padding: 5%;
+    width: 90%;
+}
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    color: #180f4a;
+    font-family: "Peralta", serif;
+    font-weight: bold;
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+}
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 1px #ff2978;
+}
+
+.card:hover {
+    background: #ff2978;
+    color: white;
+    padding: 40px;
+}
+.card:hover img {
+    display: none;
+}
+.card:hover .card_text {display: none;}
+.card:hover .texto_oculto {display: block;}
+
+
+.texto_oculto {
+    display: none;
+}
+
+footer {
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #180F4A, #090422, black);
+    text-align: center;
+    border-top: solid 5px #ff2978;
+}
+
+.logo_rodape {padding: 100px;}
+.logo_rodape p {color: white;}
+.agencia {font-family: "Peralta", serif; color: white; font-size: 34px;}
+footer b {color: white;}

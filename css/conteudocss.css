@@ -1,18 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-.sites {background: #252525;}
-li a {color: white; text-decoration: none;}
-li:hover {background: blueviolet;}
-li {display: inline-block; padding: 15px;}
-.login {float: right;}
-.login:hover {background: red;}
+/*Comentário*/
+
+*{box-sizing: border-box;}
+
+body {background-image: linear-gradient(to right, rgb(160, 157, 157), rgb(235, 235, 235));}
+
+.sites {
+    background: #252525;
+    list-style-type: none;
+    padding: 0; margin: 0; overflow: hidden;
+}
+li {
+    float: left;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background: blueviolet;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown_content {
+    position: absolute;
+    background: white;
+    width: 150px;
+    display: none;
+}
+.dropdown_content a {
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    border: solid 1px gray;
+}
+.dropdown_content a:hover {
+    transition: 100ms;
+    color: cyan;
+    font-size: 15px;
+}
+.dropdown:hover .dropdown_content {
+    display: block;
+}
 
 .borda {border: 1px solid red;}
-/*Comentário*/
 
 .background {
     height: 50px;
     background-color: red;
-    background-image: url("../img/xadrez.jpg");
+    background-image: url("/img/xadrez.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -162,14 +203,17 @@ a#botao5:hover {color: orange; text-decoration: none;}
     right: 15px; top: 20px;
 }
 
+.fixed {margin: 0;}
 .fixed:hover {opacity: 0.9;}
+.fixed a img {position: relative; top: 3px;}
+.fixed a #chama {top: 0px;}
 .fixed a:hover {transition: 300ms; color: red;}
-.fixed a {color: white; text-decoration: none;}
+.fixed a {color: white; text-decoration: none; position: relative; bottom: 5px;}
 .fixed {
     position: fixed; z-index: 999;
     bottom: 0px; right: 0px;
     background: #252525;
-    width: 90px; height: 30px;
+    width: 115px; height: 40px;
     text-align: center;
     font-size: 20px;
     border: solid 5px red;
@@ -218,8 +262,74 @@ a#botao5:hover {color: orange; text-decoration: none;}
     width: 100%;
     background: #252525;
     height: 100px;
-    overflow-y: scroll;
     color: white;
+    overflow-y: scroll;
 }
 .float {overflow: auto; border: solid 1px black;}
 .float img {float: right;}
+
+#gradientel1 {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom right, blue, red, green);
+} /*p/ baixo e direita = diagonal*/
+#gradientel2 {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(45deg, blue, red, green);
+} /*ângulo de 45° em relação à horizontal*/
+
+#gradienter {
+    width: 100%;
+    height: 100px; /*50% da área pertence ao azul puro (transição não conta)*/
+    background-image: radial-gradient(blue 50%, red);
+} /*baguio dd*/
+
+#textboxshadow {
+    text-shadow: 10px 10px 1px teal, 5px 5px 2px blue;
+} /*(x,y) da sombra depois o blur e a cor; permite várias ao mesmo elemento*/
+.boxshadow {
+    border: solid 1px red;
+    height: 50px;
+    box-shadow: 5px 5px 1px #252525;
+} /*mesma coisa do text-shadow*/
+
+#card {
+    background: white;
+    text-align: center;
+    width: 40%; height: auto; /*se adapta às modificações de tamanho*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} /*card genérico com shadow*/
+#card img {max-width: 100%;}
+
+#card:hover .efeitosdetexto {
+    white-space: normal;
+}
+.efeitosdetexto {
+    white-space: nowrap; /*deixa o texto em linha única*/
+    overflow: hidden; /*adiciona as reticências*/
+    text-overflow: ellipsis;
+}
+
+.flex_pai {
+    background: blue;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*= flex-flow: row wrap;*/
+    justify-content: space-around; /*alinhamento dos itens na horizontal*/
+    align-items: center; /*alinhamento dos itens na vertical*/
+    align-content: center; /*alinhamento de todos os itens*/
+}
+/*adaptação p/ diferentes tamanhos de tela com Media Queries*/
+@media screen and (max-width: 600px) {
+    .flex_pai {flex-direction: column;}
+}
+.flex_pai div {
+    background: white;
+    text-align: center;
+    border: solid 1px black;
+    padding: 30px;
+    flex-grow: 1; /*crescimento dos itens em relação aos outros; 1 == crescimento igualtário; pode ser modificado internamente p/ melhor organização*/
+}

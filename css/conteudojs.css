@@ -1,21 +1,26 @@
 body {background: #252525; color: white;}
 
 #claro {
-    color: yellow;
-    background-color: blue;
-    height: 57px;
-    border-radius: 50%;
-    border: solid 2px red;
-}
-#escuro {
-    color: red;
-    background-color: purple;
-    height: 57px;
+    color: black;
+    background-color: white;
+    height: 57px; width: 58px;
     border-radius: 50%;
     border: solid 2px blue;
+}
+#escuro {
+    color: white;
+    background-color: black;
+    height: 57px;
+    border-radius: 50%;
+    border: solid 2px purple;
 }
 .tema {
     position: fixed;
     bottom: 0;
     right: 0;
 }
+.verificacao {position: absolute;}
+#nome {padding: 30px;}
+#botaoverif {padding: 20px;}
+#teste {position: relative; bottom: 5px; margin: 0;}
+

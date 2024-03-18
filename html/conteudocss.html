@@ -15,7 +15,15 @@
         <li><a href="audio.html">Áudio</a></li>
         <li><a href="video.html">Vídeo</a></li>
         <li><a href="conteudohtml.html">Conteúdo html</a></li>
-        <li class="login"><a href="https://youtube.com">Login</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="https://youtube.com">Login</a>
+            <div class="dropdown_content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+        </li>
     </ul>
 
     <h1>Site - conteúdo css</h1>
@@ -94,8 +102,7 @@
     <br>
     <!--Fixa o elemento em relação à tela do usuário-->
     <div class="fixed">
-        <img class="instagram-icon" src="/img/instagram.png" alt="instagram-icon">
-        <a id="instagram" href = "https://www.instagram.com/joaogdss?igsh=MWk1bGZ4a3VvaXhpYw==" target="_blank">Chama</a>
+        <a id="instagram" href = "https://www.instagram.com/joaogdss?igsh=MWk1bGZ4a3VvaXhpYw==" target="_blank"><img class="instagram-icon" src="/img/instagram.png" alt="instagram-icon"> Chama<img id="chama" width="15px" src="/img/chama.png" alt="chama.png"></a>
     </div>
 
     <br>
@@ -133,6 +140,35 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae itaque, exercitationem optio ex ducimus repellendus amet earum! Impedit quisquam debitis autem harum itaque ut inventore reiciendis non blanditiis nesciunt!</p>
     </div>
     <br><br>
+    
+    <div id="gradientel1"></div><br>
+    <div id="gradientel2"></div><br>
+    <div id="gradienter"></div><br>
+
+    <div class="boxshadow">
+        <p id="textboxshadow">Sombra no texto e na div</p>
+    </div><br>
+    <div id="card">
+        <img src="/img/xadrez.jpg" alt="">
+        <h2 class="efeitosdetexto">Este é um título muito grande de propósito!</h2>
+        <p class="efeitosdetexto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo culpa iusto aperiam harum cumque perspiciatis id totam, consequuntur a ab veniam consequatur corporis maxime quod? Nisi eligendi architecto iure commodi. Mesma coisa do título.</p>
+    </div>
+    <br>
+
+    <h2>Brincando com a posição de elementos com Flexbox</h2>
+    <div class="flex_pai">
+        <!--a div1 cresce mais do que as outras div's-->
+        <div style="flex-grow: 3; flex: 15%;">1</div>
+        <div style="flex: 75%">2</div>
+        <div style="flex: 10%">3</div>
+        <div style="flex: 50%">4</div>
+        <div style="flex: 50%">5</div>
+        <div style="flex: 50%">6</div>
+        <div style="flex: 25%">7</div>
+        <div style="flex: 25%">8</div>
+        <div style="flex: 50%">9</div>
+        <div style="flex: 50%">10</div>
+    </div>
 
 
     <script src="/js/conteudocss.js"></script>
