@@ -1,5 +1,5 @@
 const modal_overlay = document.querySelector('.modal_overlay');
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card_img');
 
 for (let card of cards) {
     card.addEventListener("click", function() {
