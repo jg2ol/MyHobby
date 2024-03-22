@@ -1,6 +1,13 @@
 body {background: #252525; color: white;}
 
-.sites a {margin: 5px;}
+.sites a {
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.sites a:hover {
+    color: cyan;
+}
 
 #claro {
     color: black;
