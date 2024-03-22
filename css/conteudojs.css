@@ -1,5 +1,7 @@
 body {background: #252525; color: white;}
 
+.sites a {margin: 5px;}
+
 #claro {
     color: black;
     background-color: white;

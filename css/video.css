@@ -20,7 +20,7 @@ body {color: white;}
 }
 .card_content {padding: 5px 10px 0px 10px;}
 
-.card_info {padding: 0px 10px 0px 10px; height: 100%;}
+.card_info {padding: 0px 10px 0px 10px;}
 .card_info p {padding-bottom: 10px;}
 
 .card_info .material-symbols-outlined {position: relative; top: 7px;
@@ -33,7 +33,6 @@ body {color: white;}
     padding: 5px 0px;
     border-radius: 20px;
     text-align: center;
-    position: relative; bottom: 0px;
     cursor: pointer;
 }
 

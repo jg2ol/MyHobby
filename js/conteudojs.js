@@ -35,7 +35,6 @@ const pessoa = ["João", "Vitor", 17, "Chama", "a", "b"];
 pessoa.shift(); //apaga o item de posição 0
 delete pessoa[0]; //define como "undefined" o item de posição 0
 pessoa.splice(2, 1, "add1", "add2"); //adicionar itens: (posição, quantidade de itens p/ apagar(a frente), valor dos próximos itens)
-
 document.getElementById("texto1").innerHTML = pessoa.join(" - "); //printa a array e adiciona texto entre cada item
 
 const lista1 = [1, 2, 3, 4, 5, 6, 7];
@@ -76,4 +75,3 @@ function verificar() {
         p.style.color = "green";
     }
 }
-
