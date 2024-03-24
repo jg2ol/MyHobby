@@ -75,3 +75,99 @@ function verificar() {
         p.style.color = "green";
     }
 }
+
+function cor() {
+    let cor = document.getElementById("cor").value;
+    cor = cor.toLowerCase(); //deixa todo o texto em letras minúsculas
+
+    switch (cor) {
+        case "azul":
+            document.body.style.backgroundColor = "blue";
+            break;
+
+        case "amarelo":
+            document.body.style.backgroundColor = "yellow";
+            break;
+
+        case "vermelho":
+            document.body.style.backgroundColor = "red";
+            break;
+
+        default:
+            document.getElementById("teste").innerHTML = "Nenhuma cor disponível para: " + cor;
+        }
+} /*Parecido com o if porém mais usado quando há mais de uma condição, analisa até o tipo da variável da condição*/
+
+for (let i = 0; i <= 100; i = i + 1) {
+    document.getElementById("teste2").innerHTML += i + ", ";
+}
+
+
+//setTimeout(function, milisegundos), ativa a função uma única vez quando der o tempo
+function começar1 () {
+    document.getElementById('tempo1').innerHTML = "Começou a contagem!";
+    tempo = setTimeout(function(){
+        document.getElementById('tempo1').innerHTML = "Executou o setTimeout";
+    }, 1000);
+}
+//clearTimeout cancela o setTimeout
+function parar1 () {
+    clearTimeout(tempo);
+    document.getElementById('tempo1').innerHTML = "Parou a contagem!";
+}
+
+//setInterval(function, milissegundos), é um loop
+function começar2() {
+    tempo = setInterval(function() {
+        var cronometro = document.getElementById('tempo2').innerHTML;
+        var soma = parseInt(cronometro) - 1;
+
+        if (soma === 0) {
+            document.getElementById('tempo2').innerHTML = "Acabou o tempo!";
+            parar2();
+        } else {
+            document.getElementById('tempo2').innerHTML = soma;
+        }
+    }, 1000)
+}
+//clearTimeout, mesma coisa p/ o setInterval
+function parar2() {
+    clearTimeout(tempo);
+    document.getElementById('tempo2').innerHTML = "Acabou o tempo!";
+}
+
+
+//classes são maquinários p/ construir objetos
+class Carro {
+    constructor(valor1, valor2, valor3) {
+        this.marca = valor1;
+        this.modelo = valor2;
+        this.ano = valor3;
+    }
+}
+const uno = new Carro("Fiat", "Uno", 2001);
+
+//manipulando a data; ex.: vencimento, diferença de dias
+let data = new Date(); //variável que carrega a data atual do computador
+let ano = data.getFullYear(); //mostra o ano (com 4 dígitos)
+let mes = data.getMonth(); //mostra o mês, 0-11 === janeiro-dezembro
+let dia_mes = data.getDate(); //mostra o dia do mês, 1-31
+let dia_semana = data.getDay(); //mostra o dia da semana, 0-6 === domingo-sábado
+let hora = data.getHours(); //mostra a hora, 0-23
+let minutos = data.getMinutes(); //mostra os minutos, 0-59
+let segundos = data.getSeconds(); //mostra os segundos, 0-59
+let milisegundos = data.getMilliseconds(); //mostra os milissegundos, 0-999
+let data_br = data.toLocaleDateString('pt-BR'); //mostra a data de acordo com o costume do país especificado
+
+
+const carro = {
+    marca: "Fiat",
+    modelo: "Uno",
+    ano: 2001
+}
+//transformando um objeto em texto bruto
+let texto_carro = JSON.stringify(carro);
+document.getElementById('teste3').innerHTML = texto_carro;
+//transformando o texto em objeto
+let obj_carro = JSON.parse(texto_carro);
+console.log(obj_carro);

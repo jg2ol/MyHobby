@@ -331,5 +331,5 @@ a#botao5:hover {color: orange; text-decoration: none;}
     text-align: center;
     border: solid 1px black;
     padding: 30px;
-    flex-grow: 1; /*crescimento dos itens em relação aos outros; 1 == crescimento igualtário; pode ser modificado internamente p/ melhor organização*/
+    flex-grow: 1; /*crescimento dos itens em relação aos outros; 1 == crescimento igualitário; pode ser modificado internamente p/ melhor organização*/
 }

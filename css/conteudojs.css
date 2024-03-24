@@ -28,8 +28,50 @@ body {background: #252525; color: white;}
     bottom: 0;
     right: 0;
 }
-.verificacao {position: absolute;}
-#nome {padding: 30px;}
-#botaoverif {padding: 20px;}
-#teste {position: relative; bottom: 5px; margin: 0;}
+.textos p {display: inline-block; margin-right: 10px; background: gray;}
 
+.switch {position: absolute;}
+#cor {padding: 10px;}
+#botaoverif {padding: 5px;}
+#teste {position: relative; bottom: 5px; margin: 0; color: red;}
+
+.cronometro1 {
+    background: white;
+    color: black;
+    border-bottom: solid 2px #252525;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.cronometro1 h3 {flex: 100%; text-align: center; margin-top: 10px;}
+.cronometro1 button {margin-bottom: 10px; cursor: pointer;}
+#start1 {background: rgb(2, 177, 2);}
+#stop1 {background: tomato;}
+
+.cronometro2 {
+    background: white;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.cronometro2 h3 {flex: 100%; text-align: center; margin-top: -5px;}
+.cronometro2 button {margin-bottom: 10px; cursor: pointer;}
+#start2 {background: green;}
+#stop2 {background: red;}
+
+#configtempo button {cursor: pointer;}
+#configtempo {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#resetbuttom {width: 100%; display: flex; justify-content: center;}
+.add:hover {background: green;}
+.sub:hover {background: red;}
+#resetbuttom button:hover {background: yellow; cursor: pointer;}
