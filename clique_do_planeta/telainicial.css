@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{margin: 0; padding: 0;}
+.fundo_verde {background: rgb(42, 177, 42); color: white;}
+
+
+body {
+    background: #252525;
+    font-family: "Pixelify Sans", sans-serif;
+    color: white;
+}
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+p, h2, h3 {margin: 0; padding: 0;}
+
+
+header {
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#telainterativa {
+    width: 100%; height: 100%;
+    display: flex;
+}
+
+#botoes_dados {
+    background: purple;
+    width: 25%;
+}
+
+#planeta_compras {
+    width: 75%;
+    display: flex;
+}
+#planeta {
+    width: 100%; height: 100%;
+    background: blue;
+}
+#planeta img {width: 100%; height: 500px;}
+
+#compras {
+    width: 40%; height: 100%;
+    background: #343441;
+    display: none;
+}
+#compras_header {
+    padding: 6px 0px 10px 0px;
+    text-align: center;
+}
+#botao_multiplicador{padding: 3px 15px;}
+.maquinas {
+    margin: 0px 2.5% 0px 2.5%;
+    width: 95%;
+    background: #343441;
+    text-align: center;
+}
+
+#fabrica {background: #3f3f6b; margin-bottom: 5px; display: flex;}
+
+#fabrica h2 {width: 80%; text-transform: uppercase; border: solid 1px purple;}
+#fabrica .nivel_maquina {border: solid 1px green; width: 30%; display: inline-block;}
+#fabrica .renda_maquina {border: solid 1px green; width: 52%; display: inline-block;}
+#fabrica div {width: 90%;}
+#fabrica img {width: 60px; height: 52px; background: #6e6e8a;}
+
+/*mudar o display p/ flex; flex: 100% 50% 50%*/
+
+#fabrica .preco {
+    display: inline-block;
+    height: 52px; width: 53px;
+    position: relative;
+    right: 15px;
+}

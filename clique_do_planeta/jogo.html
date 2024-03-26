@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="telainicial.css">
+<head>
+    <title>Clique do Planeta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo criado p/ teste de conhecimentos em programação">
+    <meta name="author" content="joso_leirbag">
+</head>
+
+<body>
+    <header>
+        <button id="config">config</button>
+    </header>
+
+
+    <section id="telainterativa">
+
+        <div id="botoes_dados">
+            <button onclick="compras_maquinas()" id="upgrades">upgrades</button>
+
+            <button onclick="compras_planeta()" id="botao_planet_store">planetas</button>
+        </div>
+
+        <section id="planeta_compras">
+            <div id="planeta">
+                <img src="img_planetas/terra.png">
+
+                <p id="renda_player">Dinheiro por segundo: $999M</p>
+            </div>
+
+            <div id="compras">
+                <div id="compras_header">
+                    <h2>UPGRADES</h2>
+                    <button onclick="multiplica_compras()" class="fundo_verde" id="botao_multiplicador">Multiplicador: 1x</button>
+                </div>
+
+                <div class="maquinas">
+                    <div id="fabrica">
+                        <img src="img_planetas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina">$999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde">$999K</button>
+                    </div>
+                    <div id="fabrica">
+                        <img src="img_planetas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina">$999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde">$999K</button>
+                    </div>
+                    <div id="fabrica">
+                        <img src="img_planetas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina">$999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde">$999K</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    
+    <script src="controls.js"></script>
+</body>
+
+</html>
