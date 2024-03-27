@@ -316,11 +316,10 @@ a#botao5:hover {color: orange; text-decoration: none;}
     height: 600px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /*= flex-flow: row wrap;*/
-    justify-content: space-around; /*alinhamento dos itens na horizontal*/
-    align-items: center; /*alinhamento dos itens na vertical*/
-    align-content: center; /*alinhamento de todos os itens*/
+    flex-wrap: wrap; /*faz com que os itens não fujam da div pai (caso haja conteúdo demais)*/
+    justify-content: center; /*posição horizontal na div pai*/
+    align-items: center; /*posição vertical na div pai (mais individual, cada item)*/
+    align-content: flex-end; /*junta os itens da div pai e joga numa posição específica (olha p/ os elementos como um bloco)*/
 }
 /*adaptação p/ diferentes tamanhos de tela com Media Queries*/
 @media screen and (max-width: 600px) {
@@ -331,5 +330,6 @@ a#botao5:hover {color: orange; text-decoration: none;}
     text-align: center;
     border: solid 1px black;
     padding: 30px;
+    margin: 5px;
     flex-grow: 1; /*crescimento dos itens em relação aos outros; 1 == crescimento igualitário; pode ser modificado internamente p/ melhor organização*/
 }

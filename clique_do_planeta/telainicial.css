@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 .fundo_verde {background: rgb(42, 177, 42); color: white;}
+.fundo_vermelho {background: rgb(255, 37, 37); color: white;}
 
 
 body {
@@ -31,8 +32,26 @@ header {
 
 #botoes_dados {
     background: purple;
-    width: 25%;
+    width: 15%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: flex-end;
 }
+#botoes_dados button {
+    background: black; color: white;
+    width: 45%; height: 50px;
+}
+/*cortar as imagens*/
+#botoes_dados button img {width: 50px;}
+#botoes_dados p {
+    background: #18181f;
+    border: solid 4px #343441;
+    margin-top: 5px;
+    width: 90%;
+    text-align: center;
+}
+p#dinheiro {font-size: 25px;}
 
 #planeta_compras {
     width: 75%;
@@ -63,9 +82,9 @@ header {
 
 #fabrica {background: #3f3f6b; margin-bottom: 5px; display: flex;}
 
-#fabrica h2 {width: 80%; text-transform: uppercase; border: solid 1px purple;}
-#fabrica .nivel_maquina {border: solid 1px green; width: 30%; display: inline-block;}
-#fabrica .renda_maquina {border: solid 1px green; width: 52%; display: inline-block;}
+#fabrica h2 {width: 80%; text-transform: uppercase; display: inline-block;}
+#fabrica .nivel_maquina {width: 30%; display: inline-block;}
+#fabrica .renda_maquina {width: 52%; display: inline-block;}
 #fabrica div {width: 90%;}
 #fabrica img {width: 60px; height: 52px; background: #6e6e8a;}
 
