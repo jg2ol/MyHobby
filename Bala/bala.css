@@ -1,0 +1,21 @@
+*{margin: 0; padding: 0;}
+
+body {
+    background: #252525;
+    color: white;
+}
+
+.square {
+    width: 250px; height: 250px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square2 {
+    width: 250px; height: 250px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
