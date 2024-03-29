@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 /*Comentário*/
 
-*{box-sizing: border-box;}
+*{box-sizing: border-box; margin: 0; padding: 0;}
 
 body {background-image: linear-gradient(to right, rgb(160, 157, 157), rgb(235, 235, 235));}
 
@@ -10,9 +10,8 @@ body {background-image: linear-gradient(to right, rgb(160, 157, 157), rgb(235, 2
     list-style-type: none;
     padding: 0; margin: 0; overflow: hidden;
 }
-li {
-    float: left;
-}
+li {float: left;}
+
 li a, .dropbtn {
     display: inline-block;
     color: white;
