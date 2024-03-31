@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jogo criado p/ teste de conhecimentos em programação">
     <meta name="author" content="joso_leirbag">
+    <link rel="website icon" href="img_planetas/terra.png">
 </head>
 
 <body>
@@ -18,24 +19,24 @@
     <section id="telainterativa">
 
         <div id="botoes_dados">
-            <button onclick="compras_maquinas()" id="upgrades"><img src="img_botoes/botao_upgrades.png"></button>
+            <button onclick="compras_maquinas()" id="upgrades"><img src="img_botoes/seta_up_verde.png"></button>
 
             <button onclick="compras_planeta()" id="botao_planet_store"><img src="img_botoes/botao_planetas.png"></button>
 
-            <button onclick="compra_rebirth()" id="botao_rebirth">rebirth</button>
+            <button onclick="compra_rebirth()" id="botao_rebirth"><img src="img_botoes/seta_rebirth.png"></button>
             
-            <button onclick="compras_pesquisa()" id="botao_pesquisa">pesquisa</button>
+            <button onclick="compras_pesquisa()" id="botao_pesquisa"><img src="img_botoes/lupa_pesquisa.png"></button>
 
             <p id="pontos_de_pesquisa">Pontos de Pesquisa: 9999</p>
             <p id="rebirth">Renascimentos: 9999</p>
-            <p id="dinheiro">$9999M</p>
+            <p id="dinheiro"><img src="img_moedas/moeda.png"> 9999M</p>
         </div>
 
         <section id="planeta_compras">
             <div id="planeta">
-                <img src="img_planetas/terra.png">
+                <img onmouseup="widadd10()" onmousedown="widsub10()" id="planeta_img" src="img_planetas/terra.png">
 
-                <p id="renda_player">Dinheiro por segundo: $999M</p>
+                <p id="renda_player">Renda: <img id="moeda" src="img_moedas/moeda.png"> 999M / s</p>
             </div>
 
             <div id="compras">
@@ -44,30 +45,70 @@
                     <button onclick="multiplica_compras()" class="fundo_verde" id="botao_multiplicador">Multiplicador: 1x</button>
                 </div>
 
-                <div class="maquinas">
-                    <div id="fabrica">
-                        <img src="img_maquinas/caixa_misteriosa.png">
+                <div id="maquinas">
+                    <div class="maquinas" id="fabrica">
+                        <img src="img_maquinas/fabrica.png">
                         <div>
                             <h2>Fábrica</h2>
-                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina">$999K por segundo</p>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
                         </div>
-                        <button class="preco fundo_verde">$999K</button>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
                     </div>
-                    <div id="fabrica">
+                    <div class="maquinas" id="fabrica">
                         <img src="img_maquinas/caixa_misteriosa.png">
                         <div>
                             <h2>Fábrica</h2>
-                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina">$999K por segundo</p>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
                         </div>
-                        <button class="preco fundo_verde">$999K</button>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
                     </div>
-                    <div id="fabrica">
+                    <div class="maquinas" id="fabrica">
                         <img src="img_maquinas/caixa_misteriosa.png">
                         <div>
                             <h2>Fábrica</h2>
-                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina">$999K por segundo</p>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
                         </div>
-                        <button class="preco fundo_verde">$999K</button>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
+                    </div>
+                    <div class="maquinas" id="fabrica">
+                        <img src="img_maquinas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
+                    </div>
+                    <div class="maquinas" id="fabrica">
+                        <img src="img_maquinas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
+                    </div>
+                    <div class="maquinas" id="fabrica">
+                        <img src="img_maquinas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
+                    </div>
+                    <div class="maquinas" id="fabrica">
+                        <img src="img_maquinas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
+                    </div>
+                    <div class="maquinas" id="fabrica">
+                        <img src="img_maquinas/caixa_misteriosa.png">
+                        <div>
+                            <h2>Fábrica</h2>
+                            <p class="nivel_maquina">Nível 123</p><p class="renda_maquina"><img src="img_moedas/moeda.png"> 999K por segundo</p>
+                        </div>
+                        <button class="preco fundo_verde"><img src="img_moedas/moeda.png"> 999K</button>
                     </div>
                 </div>
             </div>

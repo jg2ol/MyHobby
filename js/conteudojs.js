@@ -4,7 +4,8 @@
 Tudo o que estiver aqui dentro será interpretado como comentário.
 */
 
-/* onclick: Disparado por um clique
+/*
+onclick: Disparado por um clique
 ondblclick: Disparado por um clique duplo
 onmouseover: Igual ao hover
 onmouseout: Disparado quando o mouse está fora do elemento

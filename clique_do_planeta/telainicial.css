@@ -6,9 +6,12 @@
 
 
 body {
-    background: #252525;
+    background: black;
     font-family: "Pixelify Sans", sans-serif;
     color: white;
+    margin: 0px 20px;
+    width: 100%;
+    overflow-x: hidden;
 }
 button {
     font-family: "Pixelify Sans", sans-serif;
@@ -26,73 +29,83 @@ header {
 
 
 #telainterativa {
-    width: 100%; height: 100%;
+    width: 100%; height: 527px;
     display: flex;
 }
 
 #botoes_dados {
     background: purple;
-    width: 15%;
+    width: 15%; height: 100%;
+    padding-bottom: 3px;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     align-content: flex-end;
 }
 #botoes_dados button {
-    background: black; color: white;
-    width: 45%; height: 50px;
+    background: none; color: white;
+    width: 50px; height: 50px;
+    border: none;
+    margin: 5px 10px;
 }
-/*cortar as imagens*/
-#botoes_dados button img {width: 50px;}
+
+#botoes_dados button img {height: 45px;}
+#botoes_dados p img {width: 30px; margin-right: 3px;}
 #botoes_dados p {
     background: #18181f;
     border: solid 4px #343441;
     margin-top: 5px;
     width: 90%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 p#dinheiro {font-size: 25px;}
 
 #planeta_compras {
-    width: 75%;
+    width: 85%;
     display: flex;
 }
 #planeta {
     width: 100%; height: 100%;
     background: blue;
 }
-#planeta img {width: 100%; height: 500px;}
+#planeta #planeta_img {width: 350px; margin: 60px 0px 93px 298.875px;}
+#planeta #moeda {width: 18px; position: relative; bottom: -3px;}
+#planeta #renda_player {position: relative; bottom: 6px; left: 2px;}
 
 #compras {
-    width: 40%; height: 100%;
+    width: 42%; height: 100%;
     background: #343441;
     display: none;
+    border: solid 5px #1f1f27;
 }
 #compras_header {
     padding: 6px 0px 10px 0px;
     text-align: center;
 }
 #botao_multiplicador{padding: 3px 15px;}
-.maquinas {
-    margin: 0px 2.5% 0px 2.5%;
-    width: 95%;
+#maquinas {
+    margin: 0px 2.5%;
+    width: 95%; height: 85%;
     background: #343441;
     text-align: center;
+    overflow-y: auto;
 }
 
-#fabrica {background: #3f3f6b; margin-bottom: 5px; display: flex;}
+.maquinas {background: #3f3f6b; margin-bottom: 5px; display: flex;}
 
-#fabrica h2 {width: 80%; text-transform: uppercase; display: inline-block;}
-#fabrica .nivel_maquina {width: 30%; display: inline-block;}
-#fabrica .renda_maquina {width: 52%; display: inline-block;}
-#fabrica div {width: 90%;}
-#fabrica img {width: 60px; height: 52px; background: #6e6e8a;}
+.maquinas div {width: 90%;}
+.maquinas img {width: 60px; height: 52px; background: #6e6e8a;}
+.maquinas h2 {width: 80%; text-transform: uppercase; display: inline-block;}
+.maquinas .nivel_maquina {width: 30%; display: inline-block;}
+.maquinas .renda_maquina {width: 55%; display: inline-block;}
+.renda_maquina img {width: 16px; height: 16px; background: #3f3f6b; position: relative; top: 3px;}
 
-/*mudar o display p/ flex; flex: 100% 50% 50%*/
-
-#fabrica .preco {
-    display: inline-block;
-    height: 52px; width: 53px;
-    position: relative;
-    right: 15px;
+.maquinas .preco {
+    height: 52px; width: 80px;
+    position: relative; right: 15px;
+    font-size: 17px;
 }
+.preco img {width: 15px; height: 15px; background: rgb(42, 177, 42); position: relative; top: 2px;}
