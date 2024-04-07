@@ -209,6 +209,7 @@ a#botao5:hover {color: orange; text-decoration: none;}
 .fixed a:hover {transition: 300ms; color: red;}
 .fixed a {color: white; text-decoration: none; position: relative; bottom: 5px;}
 .fixed {
+    cursor: url(/img/chama.png), auto;
     position: fixed; z-index: 999;
     bottom: 0px; right: 0px;
     background: #252525;
@@ -331,4 +332,66 @@ a#botao5:hover {color: orange; text-decoration: none;}
     padding: 30px;
     margin: 5px;
     flex-grow: 1; /*crescimento dos itens em relação aos outros; 1 == crescimento igualitário; pode ser modificado internamente p/ melhor organização*/
+}
+
+#gradient_text p {
+    margin: 20px 0px;
+    background: linear-gradient(90deg, purple, blueviolet, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#an_b_5 {
+    margin: 30px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.animations_box {
+    width: 100px; height: 100px;
+    border-radius: 20%;
+    background: limegreen;
+}
+#an_b1 {
+    animation: rotate 3s infinite;
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#an_b2 {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+
+#an_b3 {
+    animation: slideIn 2s infinite;
+}
+@keyframes slideIn {
+    0% {transform: translateX(-50%);}
+    50% {transform: translateX(0%);}
+    100% {transform: translateX(50%);}
+}
+
+#an_b4 {
+    animation: fadeIn 2s infinite;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 5;}
+    100% {opacity: 0;}
+}
+
+#an_b5 {
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-40px);}
 }
