@@ -97,7 +97,7 @@ p#dinheiro {font-size: 25px;}
 .maquinas {background: #3f3f6b; margin-bottom: 5px; display: flex;}
 
 .maquinas div {width: 90%;}
-.maquinas img {width: 60px; height: 52px; background: #6e6e8a;}
+.maquinas img {width: 60px; height: 52px; background: #806788;}
 .maquinas h2 {width: 80%; text-transform: uppercase; display: inline-block;}
 .maquinas .nivel_maquina {width: 30%; display: inline-block;}
 .maquinas .renda_maquina {width: 55%; display: inline-block;}
