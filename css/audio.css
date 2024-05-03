@@ -1,1 +1,21 @@
 .sites a {margin: 5px;}
+
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#chama1, #chama2, #chama3, #chama4 {
+    background: plum;
+    animation: rotate 2s infinite;
+}
+#chama2 {
+    background: red;
+}
+#chama3 {
+    background: blue;
+}
+#chama4 {
+    background: violet;
+}
