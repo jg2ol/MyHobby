@@ -107,7 +107,7 @@ for (let i = 0; i <= 100; i = i + 1) {
 //setTimeout(function, milisegundos), ativa a função uma única vez quando der o tempo
 function começar1 () {
     document.getElementById('tempo1').innerHTML = "Começou a contagem!";
-    tempo = setTimeout(function(){
+    tempo = setTimeout(function() {
         document.getElementById('tempo1').innerHTML = "Executou o setTimeout";
     }, 1000);
 }
