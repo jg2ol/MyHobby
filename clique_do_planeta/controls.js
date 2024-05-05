@@ -6,8 +6,9 @@ const upgrades = document.getElementById("upgrades")
 
 function compras_maquinas() {
     planeta.style.width = "58%";
-    planeta.style.transition = "450ms";
+    planeta.style.transition = "width 450ms";
     planeta_img.style.marginLeft = "230px";
+    planeta_img.style.transition = "margin 450ms";
     compras.style.display = "inline-block";
 }
 
