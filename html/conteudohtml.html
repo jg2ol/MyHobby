@@ -24,14 +24,15 @@
     </nav>
 
     <!--Semântico p/ conteúdo-->
-    <section>
+    <section id="cp">
         <h2>Coluna1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas rem praesentium, ipsum, repudiandae placeat inventore et vero veritatis impedit, consequuntur id adipisci non omnis. Perferendis amet reprehenderit laudantium beatae?</p>
+        <p>Conteúdo principal</p>
     </section>
-    <section>
+    <!--Conteúdo secundário-->
+    <aside id="cs">
         <h2>Coluna2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas rem praesentium, ipsum, repudiandae placeat inventore et vero veritatis impedit, consequuntur id adipisci non omnis. Perferendis amet reprehenderit laudantium beatae?</p>
-    </section>
+        <p>Conteúdo secundário</p>
+    </aside>
     
     <!--Semântico p/ rodapé-->
     <footer>
@@ -97,7 +98,7 @@
     <br><hr>
 
     <h2>Tabelas</h2>
-    <table border="1">
+    <table id="t1">
         <!--Titulos-->
         <tr>
             <th>Nome</th>
@@ -122,19 +123,40 @@
             <td>24 anos</td>
             <td>44 kg</td>
         </tr>
-    </table><br>
-    <hr>
+    </table>
+
+    <table id="t2">
+        <tr>
+            <td rowspan="2" class="esquerda">João</td>
+            <td class="direita">25 anos</td>
+        </tr>
+        <tr>
+            <td class="direita">Matemático</td>
+        </tr>
+
+        <tr><td colspan="2" class="esquerda">Chama</td></tr>
+        
+        <tr>
+            <td rowspan="2" class="esquerda">Gabriel</td>
+            <td class="direita">16 anos</td>
+        </tr>
+        <tr>
+            <td class="direita">Professor</td>
+        </tr>
+    </table>
+    <br><hr>
 
     <h2>Listas não ordenadas</h2>
-    <ul><!--Unorganized list-->
+    <!--Podemos mudar o marcador que vem antes dos itens; circle, square ou disc (padrão)-->
+    <ul type="square"><!--Unordered list-->
         <li>Arroz</li><!--List item-->
         <li>Feijão</li>
         <li>Macarrão</li>
     </ul>
 
     <h2>Listas ordenadas</h2>
-
-    <ol><!--Organized list-->
+    <!--Estas listas podem ser numéricas (romanas ou não) ou alfabéticas; maiúsculas ou não, e começar no ponto em que desejarmos-->
+    <ol type="I" start="3"><!--Ordered list-->
         <li>Arroz</li>
         <li>Feijão</li>
         <li>Macarrão</li>

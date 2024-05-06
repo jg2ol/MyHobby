@@ -8,7 +8,8 @@ body {background-image: linear-gradient(to right, rgb(160, 157, 157), rgb(235, 2
 .sites {
     background: #252525;
     list-style-type: none;
-    padding: 0; margin: 0; overflow: hidden;
+    padding: 0; margin: 0;
+    overflow: hidden;
 }
 li {float: left;}
 
@@ -52,8 +53,7 @@ li.dropdown {
 .background {
     height: 50px;
     background-color: red;
-    background-image: url("/img/xadrez.jpg");
-    background-repeat: no-repeat;
+    background-image: url("/img/xadrez.jpg") no-repeat;
     background-position: center;
     background-size: contain;
 }
@@ -206,10 +206,9 @@ a#botao5:hover {color: orange; text-decoration: none;}
 .fixed:hover {opacity: 0.9;}
 .fixed a img {position: relative; top: 3px;}
 .fixed a #chama {top: 0px;}
-.fixed a:hover {transition: 300ms; color: red;}
+.fixed a:hover {transition: color 300ms; color: red; cursor: url("/img/chama.png"), auto;}
 .fixed a {color: white; text-decoration: none; position: relative; bottom: 5px;}
 .fixed {
-    cursor: url(/img/chama.png), auto;
     position: fixed; z-index: 999;
     bottom: 0px; right: 0px;
     background: #252525;
@@ -321,6 +320,7 @@ a#botao5:hover {color: orange; text-decoration: none;}
     align-items: center; /*posição vertical na div pai (mais individual, cada item)*/
     align-content: flex-end; /*junta os itens da div pai e joga numa posição específica (olha p/ os elementos como um bloco)*/
 }
+
 /*adaptação p/ diferentes tamanhos de tela com Media Queries*/
 @media screen and (max-width: 600px) {
     .flex_pai {flex-direction: column;}
@@ -337,7 +337,6 @@ a#botao5:hover {color: orange; text-decoration: none;}
 #gradient_text p {
     margin: 20px 0px;
     background: linear-gradient(90deg, purple, blueviolet, blue);
-    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }

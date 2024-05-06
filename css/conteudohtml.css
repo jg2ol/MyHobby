@@ -10,8 +10,18 @@ nav {background: gray; text-align: center}
 nav a {text-decoration: none; margin-left: 25px; color: white;}
 nav a:hover {color: red;}
 
-section {width: 50%; float: left; background: white;}
+#cp {width: 60%; float: left; background: white;}
+#cs {width: 40%; display: inline-block;}
 
 footer {background: #252525; text-align: center;}
 footer a {color: white; margin-left: 25px; text-decoration: none;}
 footer a:hover {color: red;}
+
+table#t1 {border: solid 1px #606060; border-spacing: 0px; display: inline-block; width: 149.5px;}
+table#t1 th {border: solid 1px blue;}
+table#t1 td {border: solid 1px red;}
+
+table#t2 {border: 1px solid #606060; display: inline-block; margin-left: 100px; width: 147px;}
+table#t2 td {border: solid 1px red;}
+table#t2 td.esquerda {background: lightgray;}
+table#t2 td.direita {background: gray; text-align: left;}
