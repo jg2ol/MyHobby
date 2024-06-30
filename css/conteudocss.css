@@ -318,13 +318,13 @@ a#botao5:hover {color: orange; text-decoration: none;}
     flex-wrap: wrap; /*faz com que os itens não fujam da div pai (caso haja conteúdo demais)*/
     justify-content: center; /*posição horizontal na div pai*/
     align-items: center; /*posição vertical na div pai (mais individual, cada item)*/
-    align-content: flex-end; /*junta os itens da div pai e joga numa posição específica (olha p/ os elementos como um bloco)*/
+    align-content: center; /*junta os itens da div pai e joga numa posição específica (olha p/ os elementos como um bloco)*/
 }
 
-/*adaptação p/ diferentes tamanhos de tela com Media Queries*/
+/* adaptação p/ diferentes tamanhos de tela com Media Queries
 @media screen and (max-width: 600px) {
     .flex_pai {flex-direction: column;}
-}
+} */
 .flex_pai div {
     background: white;
     text-align: center;
