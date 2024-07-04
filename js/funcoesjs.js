@@ -1,6 +1,7 @@
 //Comentário por linha: Tudo o que estiver nessa linha será comentário.
 
-/*Comentário por bloco:
+/*
+Comentário por bloco:
 Tudo o que estiver aqui dentro será interpretado como comentário.
 */
 
