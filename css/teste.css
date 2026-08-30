@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+*{margin: 0; padding: 0; border: 0;}
+:root {
+    --subcor: #57a615;
+}
+
+body {
+    background-color: #252525;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    border-bottom: 1px solid var(--subcor);
+}
+.links {text-align: center;}
+.links a {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 16px;
+    text-decoration: none;
+    font-family: Tilt Neon;
+}
+.links a:hover {
+    color: var(--subcor);
+    transition: 600ms;
+    font-size: 23px;
+}
+
+#box {
+    text-align: center;
+    padding: 32px;
+}
+#box img {
+    border-radius: 50%;
+    border: 5px solid var(--subcor);
+    margin-bottom: 32px;
+}
+#box h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+#box h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+#box p {
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+#box p:hover {
+    font-size: 23px;
+}
+
+#linksFooter {padding-top: 32px;}
+#linksFooter a {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--subcor);
+}
